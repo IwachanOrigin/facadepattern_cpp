@@ -1,6 +1,8 @@
 
 set(MAIN_SRC
   main.cpp
+  lighting.h
+  lightint.cpp
 )
 
 add_executable(
