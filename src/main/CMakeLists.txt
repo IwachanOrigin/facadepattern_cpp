@@ -2,7 +2,7 @@
 set(MAIN_SRC
   main.cpp
   lighting.h
-  lightint.cpp
+  lighting.cpp
   television.h
   television.cpp
   airconditioner.h
