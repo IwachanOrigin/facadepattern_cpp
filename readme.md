@@ -6,6 +6,14 @@
 
 ## 使いどころ
 
+    Facade Patternは、各クラスとそれを使うクラスの間にインターフェイスを設ける考え方です。  
+    ただし、各クラスを利用するために具体的なインターフェイスを設けると意味がありません。  
+    その場合、各クラスを直接使うのが良いでしょう。  
+    今風に例えると、ファンタジーモノ小説に出てくるギルドの受付嬢はFacade Patternで実装されていますね。  
+    冒険者はクライアントクラス、ギルドの受付嬢はFacadeクラスです。  
+    冒険者はギルドの受付嬢を通してギルド側の手続きをやってもらいますが、同じ意味になります。  
+    この仕組のおかげで冒険者はギルドの細かい仕組みや手続きを知らなくてもギルドという大きなサブシステムを利用できるのです。  
+    この例えに則れば、窓口業務を行っているあらゆるモノに対して「Facade Pattern」が適用されていると言えます。  
 
 ## Build
 
@@ -18,6 +26,10 @@
     ex. VS2019以上の場合  
     powershell.exe cmake -S . -B build  
     powershell.exe cmake --build build 
+
+    ex. LLVM(15.0.0+) + Ninja + cmakeの場合  
+    powershell.exe cmake -S . -B build -G "\"Ninja Multi-Config\""  
+    powershell.exe cmake --build build --config debug  
 
 ## 参考
 
